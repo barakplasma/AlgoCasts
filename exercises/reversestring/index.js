@@ -8,10 +8,14 @@
 
 /**
  * reverse the string
- * @param {string} str 
+ * @param {string} str
  */
 function reverse(str) {
-    return str.split('').reverse().join('');
+  let reversed = "";
+  for (let char of str) {
+    reversed = char + reversed;
+  }
+  return reversed;
 }
 
 module.exports = reverse;
