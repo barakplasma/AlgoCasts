@@ -13,9 +13,7 @@
 //   buzz
 
 function fizzBuzz(n) {
-    Array(n).fill(0).forEach((_, index) => {
-        index++;
-
+    for(let index = 1; index <= n; index++) {
         if(index % 3 === 0 && index % 5 !== 0) {
             console.log('fizz');
         }
@@ -28,7 +26,7 @@ function fizzBuzz(n) {
         if (index % 3 !== 0 && index % 5 !== 0) {
             console.log(index);
         }
-    });
+    };
 }
 
 module.exports = fizzBuzz;
